@@ -1,0 +1,40 @@
+{
+  "name": "stellar-swap-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Soroswap and DeFindex integration on Stellar blockchain",
+  "main": "dist/index.js",
+  "bin": {
+    "stellar-swap-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "dev:soroswap": "tsx src/soroswap-server.ts",
+    "dev:defindex": "tsx src/defindex-server.ts",
+    "start": "node dist/index.js",
+    "start:soroswap": "node dist/soroswap-server.js",
+    "start:defindex": "node dist/defindex-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stellar",
+    "soroswap",
+    "defindex",
+    "mcp",
+    "defi",
+    "blockchain",
+    "hackathon"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "@stellar/stellar-sdk": "^13.3.0",
+    "@types/node": "^24.0.14",
+    "axios": "^1.10.0",
+    "stellar-sdk": "^13.3.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
