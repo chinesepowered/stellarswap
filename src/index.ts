@@ -33,8 +33,9 @@ class StellarSwapMCPServer {
     const network = (process.env.STELLAR_NETWORK as 'testnet' | 'mainnet') || 'testnet';
     const soroswapApiKey = process.env.SOROSWAP_API_KEY;
     const defindexApiKey = process.env.DEFINDEX_API_KEY;
+    const soroswapApiUrl = process.env.SOROSWAP_API_URL;
     
-    this.soroswapClient = new SoroswapClient(network, soroswapApiKey);
+    this.soroswapClient = new SoroswapClient(network, soroswapApiKey, soroswapApiUrl);
     this.defindexClient = new DefindexClient(network, defindexApiKey);
     
     this.setupToolHandlers();

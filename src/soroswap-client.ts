@@ -55,9 +55,10 @@ export class SoroswapClient {
 
   constructor(
     network: 'testnet' | 'mainnet' = 'testnet',
-    apiKey?: string
+    apiKey?: string,
+    baseUrl: string = 'https://api.soroswap.finance'
   ) {
-    this.baseUrl = 'https://api.soroswap.finance';
+    this.baseUrl = baseUrl;
     this.horizonUrl = network === 'testnet' 
       ? 'https://horizon-testnet.stellar.org'
       : 'https://horizon.stellar.org';

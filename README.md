@@ -225,10 +225,6 @@ This MCP server is designed specifically for the Stellar/Soroswap hackathon with
 - [ ] Multi-language support
 - [ ] Advanced portfolio rebalancing
 
-## 📝 License
-
-MIT License - feel free to use this for your hackathon projects!
-
 ## 🤝 Contributing
 
 This project was built for the Stellar/Soroswap hackathon. Feel free to fork and extend for your own use cases!
@@ -265,4 +261,4 @@ This MCP server now includes **real API integration** with graceful fallbacks:
 
 ---
 
-**Happy Hacking! 🌟**
+**Happy Farming! 🌟**
