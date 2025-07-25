@@ -159,6 +159,7 @@ STELLAR_HORIZON_URL=https://horizon-testnet.stellar.org
 
 # API Keys (Optional - will use mock data if not provided)
 SOROSWAP_API_KEY=your_soroswap_api_key_here
+SOROSWAP_API_URL=https://api.soroswap.finance # Optional - override for staging/dev
 DEFINDEX_API_KEY=your_defindex_api_key_here
 
 # Development Settings
